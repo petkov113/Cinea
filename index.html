@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>CINEA // rating agregator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Logo" class="header__logo" />
+        <form class="search">
+          <input
+            type="text"
+            class="search__field"
+            placeholder="Search movies or TV-series"
+          />
+          <button class="btn search__btn">
+            <svg class="search__icon">
+              <use href="img/icons.svg#icon-magnifying-glass"></use>
+            </svg>
+            <span>Search</span>
+          </button>
+        </form>
+      </header>
+      <div class="results">
+        <ul class="results__list"></ul>
+        <div class="results__pages"></div>
+      </div>
+      <div class="movie"></div>
+      <div class="watchlist">
+        <div>
+          <h2 class="heading-2">My watchlist</h2>
+          <div class="sort-group">
+            <span>Sort by: &nbsp;</span>
+            <input type="radio" name="sort" id="year" />
+            <label for="year"> year </label>
+            <input type="radio" checked name="sort" id="rating" />
+            <label for="rating"> rating </label>
+          </div>
+        </div>
+        <ul class="watchlist__list"></ul>
+        <div class="results__pages"></div>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
